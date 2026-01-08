@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Cyberpunk Memory Match</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="intro-screen" class="overlay">
+        <h1 class="neon-title">NEON MEMORY MAZE</h1>
+        <div class="buttons">
+            <button id="start-btn" class="neon-btn">START GAME</button>
+            <div class="difficulty">
+                <button id="easy-btn" class="neon-btn">EASY</button>
+                <button id="medium-btn" class="neon-btn">MEDIUM</button>
+                <button id="hard-btn" class="neon-btn">HARD</button>
+            </div>
+        </div>
+    </div>
+    <div id="game-container" class="hidden">
+        <div id="hud">
+            <div id="time">Time: 00:00</div>
+            <div id="moves">Moves: 00</div>
+        </div>
+        <div id="game-grid"></div>
+    </div>
+    <div id="victory-overlay" class="overlay hidden">
+        <h2 id="victory-title">MISSION ACCOMPLISHED</h2>
+        <div id="stats">
+            <p>Time: <span id="final-time">00:00</span></p>
+            <p>Moves: <span id="final-moves">00</span></p>
+        </div>
+        <div id="leaderboard">
+            <h3>Top Times</h3>
+            <ol id="leaderboard-list"></ol>
+        </div>
+        <button id="restart-btn" class="neon-btn">RESTART</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
